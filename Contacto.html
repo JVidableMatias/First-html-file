@@ -4,43 +4,55 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="with=device-with, initial-scale=1.0" />    
         <title>Contacto</title>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
+    <body class="font-sans bg-gray-100">
 
-        <header>
-            <h1>Formulario de contacto</h1>
+        <!-- Header Section -->
+        <header class="bg-white shadow-md">
+            <div class="max-w-screen-xl mx-auto flex justify-between items-center p-5">
+                <div class="font-bold text-xl">Formulario de contacto</div>
+        </div>
         </header>
 
+        <!-- Hero Section -->
+
         <main>
-           <div>
-            <h2>Este es un formulario para que puedas contactarme</h2>
-            <p>
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, ipsum consequatur commodi
-             cum voluptatem aut perferendis repellendus! Eius, ea similique et nostrum fugiat impedit.
-              Sunt sequi quia magnam dicta aperiam!
+            <section class="max-w-screen-xl mx-auto flex items-center justify-between py-20 px-5">
+            <div class="space-y-6 w-1/2">
+            <h1 class="text-4xl font-extrabold text-gray-800">Este es un formulario para que puedas contactarme</h1>
+            <p class="text-lg text-gray-600">
+             Con este formulario sabre quien eres y asi podre contactarte al mail que deberas especificar a continuacion.
             </p>
-           </div> 
+            </div> 
+            </section>
 
            <form>
-
-            <div>
+            <div class="space-y-6">
                 <label for="Nombre">Nombre: </label>
                 <input type="text" name="Nombre"/> 
             </div>
 
-            <div>
+            <div class="space-y-6">
                 <label for="Apellido">Apellido: </label>
                 <input type="text" name="Apellido"/>
             </div>
             
-            <div>
-                <label for="Edad">Edad: </label>
-                <input type="number" name="Edad" />
+            <div class="space-y-6">
+                <label for="mail">Mail: </label>
+                <input type="text" name="Mail" />
             </div>
 
-            <button>Enviar</button>
-
+            <div class="space-y-6">
+            <button class="bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-400 transition">Enviar</button>
+            </div>
            </form>
 
         </main>
+        
+        <footer class="bg-white shadow-md">
+            <p class="text-lg text-gray-600">En caso de no recibir una respues de mi parte a continuacion dejo mi contacto.</p>
+            <button class="bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-400 transition">38**-****54</button> 
+        </footer>
+
     </body>

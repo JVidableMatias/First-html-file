@@ -3,33 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="with=device-with, initial-scale=1.0" />    
-        <title>Mi página web</title>
+        <title>Locura por la pesca en La Rioja</title>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <header>
-            <h1>Mi página de pesca</h1>
-        </header>
+    <body class="font-sans bg-gray-100">
 
-        <nav> <span>Lugares</span>
-            <span>Clima</span>
-            <span>Elementos</span>
-            <span>Accesorios</span> 
-        </nav>
-         
+        <!-- Header Section -->
+        <header class="bg-white shadow-md">
+            <div class="max-w-screen-xl mx-auto flex justify-between items-center p-5">
+                <div class="font-bold text-xl">Mi página de Pesca</div>
+                <nav class="space-x-4">
+                    <a href="" class="text-gray-700 hover:text-yellow-500">Lugares</a>
+                    <a href="" class="text-gray-700 hover:text-yellow-500">Clima</a>
+                    <a href="" class="text-gray-700 hover:text-yellow-500">Elementos</a>
+                    <a href="" class="text-gray-700 hover:text-yellow-500">Accesorios</a>
+                </nav>
+            </div>
+        </header> 
+
+        <!-- Hero Section -->
         <main>
 
-           <img src="./Pesca.jpg" />
+           
 
-            <section>
+            <section class="max-w-screen-xl mx-auto flex items-center justify-between py-20 px-5">
+                <div class="space-y-6 w-1/2">
 
                 <article>
-
-                    <div>
-                        <h2>Locura por la pesca</h2>
-                    </div>
-           
-                    <h3>Lugares de pesca en La rioja</h3>
-                    <p>Mejores lugares</p>
+                    <h1 class="text-4xl font-extrabold text-gray-800">Locura por la <span class="text-red-700">PESCA</span></h1>
+                    <h1 class="text-4xl font-extrabold text-gray-800"></h1>Lugares de pesca en La Rioja</h1>                                              
+                    <p class="text-lg text-gray-600">Mejores lugares</p>
             
                     <ol>
                         <li>Los cotos de El Villar</li>
@@ -37,38 +40,21 @@
                         <li>Anguciana</li>
                         <li>Embalse de Gonzáles Lacasa</li>
                     </ol>
-            
                 </article>
+                </div>
 
                 <hr />
                 
-                <article>
+                <img src="./Pesca2.jpg" alt="Pesca image" class="rounded-lg shadow-lg">
 
-                    <h3>Pesca de truchas</h3>
-                    <p>En La Rioja tenemos varios rios donde pescar truchas, tales como:</p>
-            
-                    <ul>
-                        <li>Río Tiron</li>
-                        <li>Río Oja</li>
-                        <li>Río Najerilla</li>
-                        <li>Río Iregua</li>
-                        <li>Río Leza</li>
-                        <li>Río Cidacos</li> 
-                    </ul>
-            
-                </article>
-                
-                <hr />
+                </div>
 
             </section>
-            
+
         </main>
 
-        <footer>
-            <p>Este es el footer de la página.</p>
-              
-            <a href="./Contacto.html">Formulario de contacto</a>
-
+        <footer class="bg-white shadow-md">
+            <a href="./Contacto.html"><button class="bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-400 transition">Formulario de contacto</button></a> 
         </footer>
 
     </body>
